@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to The Book Nook</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <h3 class="hidden">Main Navigation</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Book Recommendations</li> 
+                <li>Reviews</li>
+                <li>Contact</li>
+                 </ul>
+                </nav>
+    </header>
+    <main id="content">
+        <h2>Contact Us!</h2>
+        <!--insert image-->
+        <img src="https://via.placeholder.com/250" alt="This is a placeholder image, sized at 250x250 pixels"> 
+        <form action="email.php" method="POST" enctype="text/plain">
+            <input name="fullName" type="text" placeholder="First & Last Name">
+            <input name="contactInfo" type="text" required placeholder="">
+            <textarea name="msg" placeholder="Enter your message here..."></textarea>
+            <input name="submit" type="submit" value="Send">
+        </form>
+    </main>
+    <footer>
+        <section>
+             <h3 class="hidden">Contact Information</h3>
+             <!--Insert fake social media accounts-->
+             <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Etiam nulla sem, pretium ac eleifend eget, tristique non orci.<br>
+                thebooknook@madeup.ca 
+             </p>
+             <nav aria-label="Footer Navigation">
+                <h3 class="hidden">Footer Navigation</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Book Recommendations</li> 
+                    <li>Reviews</li>
+                    <li>Contact</li>
+                     </ul>
+                    </nav>
+            <p>
+                ©2021 The Book Nook Inc. All Rights Reserved. Privacy Policy
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
