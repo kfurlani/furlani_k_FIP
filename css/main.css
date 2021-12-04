@@ -1,0 +1,375 @@
+/*
+Style Name: HTML Atributes & Forms 
+Description: Class File
+Author: Justin Brunner 
+Version: 1.0
+Tags: Learning HTML
+*/
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: rgb(249, 250, 249);
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+/* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+
+/* 01. General Styles
+       - Reset
+       - Global
+         - General
+         - Floats
+         - Brand Colors
+         - Font Awesome                       
+   02. CSS Grid
+   03. Site Header
+       - Header
+       - Nav
+   04. Hero
+       - Image
+       - Title
+   05. Why Choose Couples Resort
+       - Nav                       
+/* _____________________________________
+
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+/* -------------
+  Reset
+-------------*/
+
+/* -------------
+  Fonts
+-------------- */
+.trending-title{
+    font-size: 30px;
+    color: #F4F2E9
+}
+.text-box{
+    font-size: 20px;
+    color: #F4F2E9
+}
+.text.box-2{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+}
+
+.text-box-foot{
+    font-size:18px;
+    color: #D3CC53;
+}
+
+
+/* ------------ */
+
+/* -------------
+  Plugins
+-------------*/
+
+
+
+body {
+   background-color: #F4F2E9;
+   margin: 0;
+   padding: 0;
+   color: rgb(0, 0, 0);
+}
+
+
+   /*------------ General ------------*/
+
+ .hidden {
+    display: none;
+ }
+
+ .welcome-font{
+     font-size: 30px;
+ }
+
+ .large-text{
+     font-size: 25px;
+ }
+
+ .box-model {
+    margin: 0px;
+    padding: 10px;
+    background: #F4F2E9;
+ }
+ .box-model-2 {
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    background: #84191B;
+ }
+
+ .box-model-3{
+    margin: 2px;
+    padding: 2px;
+    justify-content: center;
+    background: #282D6A;
+ }
+ section {
+    margin: 3rem 0;
+ }
+
+ footer section {
+    margin: 3rem 0 0 0;
+ }
+
+ .image-margin {
+    margin: 0 1em;
+  }
+
+  .center{
+      text-align: center;
+  }
+
+  .image-margin-top{
+      margin-top: 2em;
+  }
+
+  .left{
+      text-align: left;
+  }
+
+  .border-right {
+      border-right: 2px solid #fff;
+  }
+
+   /*------------ End General ------------*/
+
+
+
+/* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+
+    .site {
+       max-width: none;
+    }
+
+    /*------------ Grid Items ------------*/
+    .head, .main > *, .footer {
+        display: grid;
+           grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+     }
+
+
+     .one-item {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: 1fr;
+     }
+
+     .two-items {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+     }
+
+     .two-items-2 {
+        display: grid;
+        grid-column: 2 / span 3;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+     }
+
+     .three-items {
+        display: grid;
+        grid-column: 4 / span 4;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
+     }
+
+
+
+           /*------------ End Grid Items ------------*/
+
+/* _____________________________________
+
+   03. Site Header
+   _____________________________________ */
+
+   header {
+    position: sticky;
+    top: 0em;
+    background-color: #F4F2E9;
+    border-bottom: 1px solid #F4F2E9;
+    box-shadow: 0px 5px 8px rgb(224, 222, 222);
+ }
+
+ .logo {
+    grid-column: 1 / span 1;
+ }
+
+ .logo img {
+    padding: 1em;
+    width: 50%;
+ }
+
+ /*------------ Start Nav Styling ------------*/
+ .nav {
+    grid-column: 2 / span 3;
+    padding-top: 1.5em;
+    margin: 0;
+ }
+
+ nav ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: end;
+    font-size: xx-large;
+ }
+
+ nav li {
+    display: inline;
+    margin-right: 4em;
+ }
+
+ nav li:last-child {
+    margin-right: 2em;
+ }
+
+  /*------------- End Site Header ------------*/
+
+  /* _____________________________________
+
+   04. Hero
+   _____________________________________ */
+
+   .hero {
+    margin: 0 0;
+ }
+
+ .hero-img img {
+    width: 100%;
+ }
+
+ .hero-img {
+    display: grid;
+    grid-column: span 4;
+    margin-bottom: 1rem;
+ }
+
+ .hero-img > * {
+    grid-column: 1;
+    grid-row: 1;
+ }
+   /*------------ End Hero ------------*/
+   /*------- Images -----------*/
+
+ .banner {
+    margin: 0 0;
+ }
+
+ .banner-1 img {
+    width: 100%;
+ }
+
+ .banner-img {
+    display: grid;
+    grid-column: span 4;
+    margin-bottom: 1rem;
+ }
+
+ .banner-img > * {
+    grid-column: 2;
+    grid-row: 2;
+ }
+
+ .quote {
+    margin: 0 0;
+ }
+
+ .quote-img img {
+    width: 100%;
+ }
+
+ .quote-img {
+    display: grid;
+    grid-column: span 4;
+    margin-bottom: 1rem;
+ }
+
+ .quote-img > * {
+    grid-column: 1;
+    grid-row: 1;
+ }
+
+/*------------- Start Footer ------------*/
+ .footer{
+    top: 5px;
+    background-color: #1F3A1F;
+    border-bottom: 5px solid #1F3A1F;
+    padding: 2em 0;
+ }
+
+
+
+
+
+
+/*------------- Start Footer ------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+}

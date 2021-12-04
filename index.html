@@ -4,94 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Welcome to The Book Nook</title>
 </head>
-<body>
-    <header>
-        <nav aria-label="Main Navigation">
-            <h3 class="hidden">Main Navigation</h3>
-            <ul>
+<body class="site">
+    <h1 class="hidden">Welcome to the Book Nook</h1>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header class="head">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Book Nook logo">
+        </div>
+        <nav class="nav" aria-label="Main Navigation">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="large-text">
                 <li>Home</li>
-                <li>About</li>
-                <li>Book Recommendations</li> 
-                <li>Reviews</li>
+                <li>Reviews</li> 
+                <li>Recommendations</li>
                 <li>Contact</li>
                  </ul>
                 </nav>
     </header>
-    <main id="content">
-    <section>
-    <!-- banner image carousel-->
-        <img src="https://via.placeholder.com/250" alt="This is a placeholder image, sized at 250x250 pixels"> 
-        <!-- text box with welcome message to the website-->
-    <h2> Welcome to the Book Nook</h2> 
+    <main id="content" class="main">
+        <section class="hero">
+            <div class="hero-img">
+                <img src="images/hero.jpg" alt="Book Nook logo">
+            </div>
+            <div class="one-item center box-model welcome-font">
+    <h2> Welcome to the Book Nook</h2>
+            </div>
+            <div class="one-item center box-model large-text">
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet dui nec massa placerat, <br>
-        non bibendum felis pulvinar. Etiam nulla sem, pretium ac eleifend eget, tristique non orci. <br>
-        Donec a fermentum risus. Curabitur cursus dolor eu sapien tempor, malesuada auctor magna gravida. <br>
-        Quisque semper non mi ut molestie. Pellentesque ultricies, ex ut porttitor varius, purus nulla aliquam dui, <br>
-        a laoreet augue leo sit amet elit. Quisque suscipit libero urna, et aliquam arcu hendrerit sit amet.<br>
+        The Book Nook is an online community where all book  <br>
+        lovers can come together. We’ll keep you up to date with all <br>
+        the current hot and trending books!  We welcome book  <br>
+        suggestions from all genres and love to hear from you. <br>
+        Do you have a book you recently read that you either loved or <br>
+        hated? Head on over to our contact page and your review <br>
+        could be featured on our review page! <br>
     </p>
+            </div>
     </section>
-    <section>
-        <!--Image of small stack of books -->
-        <img src="https://via.placeholder.com/250" alt="This is a placeholder image, sized at 250x250 pixels"> 
-        <!-- Three button images, that will link you to the other pages-->
-        <h3>Book Reviews</h3>
-        <img src="https://via.placeholder.com/150" alt="This is a placeholder image, sized at 150x150 pixels"> 
-        <h3>Book Recommendations</h3>
-        <!--this page hasn't been created yet-->
-        <img src="https://via.placeholder.com/150" alt="This is a placeholder image, sized at 150x150 pixels"> 
-        <h3>Contact</h3>
-        <img src="https://via.placeholder.com/150" alt="This is a placeholder image, sized at 150x150 pixels"> 
+    <section class="banner">
+        <div class="banner-img">
+        <img class=".image-margin" src="images/bookstack_pumpkin-new-2.jpg" alt="banner image"> 
+        </div>
     </section>
-    <section>
-<!--Insert banner image that has a quote on it-->
-<img src="https://via.placeholder.com/250" alt="This is a placeholder image, sized at 250x250 pixels"> 
-<h2>Feature book of the month</h2>
-<!--Image of the book-->
-<img src="https://via.placeholder.com/150" alt="This is a placeholder image, sized at 150x150 pixels"> 
-<!--small description of book-->
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet dui nec massa placerat, <br>
-    non bibendum felis pulvinar. Etiam nulla sem, pretium ac eleifend eget, tristique non orci. <br>
-    Donec a fermentum risus. Curabitur cursus dolor eu sapien tempor, malesuada auctor magna gravida. <br>
-</p>
+    <section class="quote">
+        <div class="quote-img">
+<img src="images/quote.jpg" alt="svg of quote">
+        </div>
+        </section>
+    <section class="book of the month">
+        <div class="two-items">
+            <div>    
+                <img src="images/book_of_month-2.jpg" alt="book of the month"> 
+            </div>
+            <div>
+                <h2 class="center box-model-2 trending-title">BOOK OF THE MONTH</h2>
+                <p class="right box-model-2 text-box">
+                    A Court of Thorns and Roses <br><br>
+“When nineteen-year-old Feyre kills a wolf in the woods, a beast-like creature arrives to demand retribution for it.<br>
+ Dragged to a treacherous magical land she only knows about from legends, Feyre discovers that her captor is not an animal, but <br>
+ Tamlin-one of the lethal, immortal faeries who once ruled their world.”<br><br>
+                                Sarah J. Maas
+                </p>
+            </div>
+        </div>
     </section>
-    <section>
- <!--banner image of someone reading on a bench-->
- <img src="https://via.placeholder.com/250" alt="This is a placeholder image, sized at 250x250 pixels">  
- <h2>Trending Boooks</h2>    
- <!--insert small image of a few book, next to steaming cup of coffee-->
- <img src="https://via.placeholder.com/150" alt="This is a placeholder image, sized at 150x150 pixels"> 
- <!--text box beside image with list of treding books-->
- <h3>Book title 1</h3>
- <h3>Book title 2</h3>
- <h3>Book title 3</h3>
- <h3>Book title 4</h3>
- <h3>Book title 5</h3>
+    <section class="banner">
+        <div class="banner-img">
+ <img src="images/book_banner-2.jpg" alt="book banner">  
+        </div>
+    </section>
+    <section class="trending books">
+        <div class="one-item">
+        <h2 class="center box-model-3 trending-title">TRENDING BOOKS</h2>  
+        </div>
+        <div class="two-items-2">
+            <div>
+ <img class="image-margin-top" src="images/trending_books-2.jpg" alt="book stack"> 
+            </div>  
+ <ol class="large-text">
+     <li> The Seven Husbands of Evelyn Hugo <br> By: Taylor Jenkins Reid</li><br>
+     <li>The Secret History <br> By: Donna Tartt</li><br>
+     <li>Dance of Thieves <br> By: Mary E. Pearson</li><br>
+     <li>The Glass Hotel <br> By: Emily St. John Mandel </li>
+ </ol>
+        </div>
     </section>
 
 </main>
     <footer>
-        <section>
-             <h3 class="hidden">Contact Information</h3>
-             <!--Insert fake social media accounts-->
-             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                Etiam nulla sem, pretium ac eleifend eget, tristique non orci.<br>
-                thebooknook@madeup.ca 
-             </p>
+        <section class="footer">
              <nav aria-label="Footer Navigation">
                 <h3 class="hidden">Footer Navigation</h3>
-                <ul>
+                <div>
+                <ul class=" border-right left image-margin text-box-foot">
                     <li>Home</li>
-                    <li>About</li>
-                    <li>Book Recommendations</li> 
-                    <li>Reviews</li>
+                    <li>Reviews</li> 
+                    <li>Recommendations</li>
                     <li>Contact</li>
                      </ul>
-                    </nav>
+                </div>
+            </nav>
             <p>
                 ©2021 The Book Nook Inc. All Rights Reserved. Privacy Policy
             </p>
