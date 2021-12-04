@@ -91,7 +91,10 @@ ___________________________________________ */
     font-size:18px;
     color: #D3CC53;
 }
-
+.title-box{
+   font-size: 25px;
+   color: #F4F2E9
+}
 
 /* ------------ */
 
@@ -134,6 +137,18 @@ body {
     justify-content: center;
     background: #84191B;
  }
+ .box-model-2-g {
+   margin: 5px;
+   padding: 5px;
+   justify-content: center;
+   background: #1F3A1F;
+}
+.box-model-2-b {
+   margin: 5px;
+   padding: 5px;
+   justify-content: center;
+   background: #282D6A;
+}
 
  .box-model-3{
     margin: 2px;
@@ -168,7 +183,7 @@ body {
   .border-right {
       border-right: 2px solid #fff;
   }
-
+  
    /*------------ End General ------------*/
 
 
@@ -210,6 +225,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
      }
+
 
      .three-items {
         display: grid;
