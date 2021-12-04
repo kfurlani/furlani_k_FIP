@@ -4,93 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Welcome to The Book Nook</title>
 </head>
-<body>
-    <header>
-        <nav aria-label="Main Navigation">
-            <h3 class="hidden">Main Navigation</h3>
-            <ul>
+<body class="site">
+    <h1 class="hidden">Welcome to the Book Nook</h1>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header class="head">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Book Nook logo">
+        </div>
+        <nav class="nav" aria-label="Main Navigation">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="large-text">
                 <li>Home</li>
-                <li>About</li>
-                <li>Book Recommendations</li> 
-                <li>Reviews</li>
+                <li>Reviews</li> 
+                <li>Recommendations</li>
                 <li>Contact</li>
                  </ul>
                 </nav>
     </header>
-    <main id="content">
-        <section>
-<!--large banner image of books-->
-<h2>Book Reviews</h2>
-<!--small paragraph about the reviews-->
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet dui nec massa placerat, <br>
-    non bibendum felis pulvinar. Etiam nulla sem, pretium ac eleifend eget, tristique non orci. <br>
-    Donec a fermentum risus. Curabitur cursus dolor eu sapien tempor, malesuada auctor magna gravida.
-</p>
+    <main id="content" class="main">
+        <section class="hero">
+            <div class="hero-img">
+                <img src="images/review_banner.jpg" alt="open books">
+            </div>
+        </section>
+<section class="book review 1">
+    <div class="two-items">
+        <div>
+            <img src="images/book_review_HGG.jpg" alt="book review image 1">
+        </div>
+        <div>
+        <h2 class="center box-model-2-g title-box">THE HITCHHIKER'S GUIDE TO THE GALAXY</h2>
+        <p class="right box-model text-box-2">
+            “This book series is one of the most interesting things I have ever read. <br>
+            It has such an incredibly weird style of worldbuilding and storytelling that I can't help but love it.<br>
+            It's like a tangent in book form. One minute you're incredibly invested in the ultimate question to <br>
+            the ultimate answer (42) and the next you're on the planet of the space hobo who makes every important decision <br>
+            in the universe. It has such a unique sense of humor too. It might come off as random to some, but <br>
+            everything has a purpose. There are random facts that are brought up and then used later as a punchline to a joke. <br>
+            And these jokes and their punchline build the foundation for the story. As a result, even when the book has a  serious moment, <br>
+            it's impossible to take it seriously, because everything is so strange and odd and funny. Over time <br>
+            these little tidbits that are first used for a single gag develop into major plot points, which shape the story and the jokes being told. <br>
+            As a result, it's hard not to see the entire story as one big elaborate joke. And if that's your kinda thing, you'll love this book.” <br>
+            <br><br>
+            The Egg Man, 2021
+        </p>
+    </div>
+    </div>
+</section>
+<section class="book review 2">
+    <div class="two-items">
+        <div>
+            <img src="images/book_review_O.jpg" alt="book review image 2">
+        </div>
+        <div>
+        <h2 class="center box-model-2-b title-box">OUTLANDER</h2>
+        <p class="right box-model text-box-2">
+            “I've read that Outlander was originally marketed as a romance novel because the publisher <br>
+            didn't know what else to do with it, but this book is no ordinary romance novel. It doesn't follow any typical<br>
+            romance formula and is a real genre bender that doesn't fit neatly into any one category. Outlander has a swoon-worthy <br>
+            hero and dozens of truly romantic scenes that should be sufficient to satisfy even the most discriminating <br>
+            romance reader, while it's time travel aspect and a few references to   witches and fairies should be of interest to readers <br>
+            of fantasy and paranormal stories. At it's heart though Outlander is a historical novel rife with details of 18th century <br>
+            life in the Scottish Highlands both inside and outside a castle or large estate. It also recounts some of the events <br>
+            leading up to the Jacobite Pretender's Uprising of 1745. Diana Gabaldon is an amazing writer who delves deep into her character's <br>
+            lives and the history surrounding them, painting an extraordinary picture that truly transports the reader to another <br>
+            time and place.”<br><br>
+            Julianna Douglas, 2008
+        </p>
+    </div>
+    </div>
 </section>
 <section>
-<h2>Genre i.e Romance</h2> <!-- This title banner will be made in illustrator-->
-<!--image of book being reviewed-->
-<img src="https://via.placeholder.com/150" alt="This is a placeholder image, sized at 150x150 pixels"> 
-<h3>Book Title and Author</h3>
-<!--text box with review-->
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet dui nec massa placerat, <br>
-    non bibendum felis pulvinar. Etiam nulla sem, pretium ac eleifend eget, tristique non orci. <br>
-    Donec a fermentum risus. Curabitur cursus dolor eu sapien tempor, malesuada auctor magna gravida. <br>
-    Quisque semper non mi ut molestie. Pellentesque ultricies, ex ut porttitor varius, purus nulla aliquam dui, <br>
-    a laoreet augue leo sit amet elit. Quisque suscipit libero urna, et aliquam arcu hendrerit sit amet.<br>
-</p>
-</section>
-<section>
-    <h2>Genre i.e Fantasy</h2> <!-- This title banner will be made in illustrator-->
-<!--image of book being reviewed-->
-<img src="https://via.placeholder.com/150" alt="This is a placeholder image, sized at 150x150 pixels"> 
-<h3>Book Title and Author</h3>
-<!--text box with review-->
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet dui nec massa placerat, <br>
-    non bibendum felis pulvinar. Etiam nulla sem, pretium ac eleifend eget, tristique non orci. <br>
-    Donec a fermentum risus. Curabitur cursus dolor eu sapien tempor, malesuada auctor magna gravida. <br>
-    Quisque semper non mi ut molestie. Pellentesque ultricies, ex ut porttitor varius, purus nulla aliquam dui, <br>
-    a laoreet augue leo sit amet elit. Quisque suscipit libero urna, et aliquam arcu hendrerit sit amet.<br>
-</p>
-</section>
-<section>
-    <h2>Genre i.e Mystery</h2> <!-- This title banner will be made in illustrator-->
-<!--image of book being reviewed-->
-<img src="https://via.placeholder.com/150" alt="This is a placeholder image, sized at 150x150 pixels"> 
-<h3>Book Title and Author</h3>
-<!--text box with review-->
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet dui nec massa placerat, <br>
-    non bibendum felis pulvinar. Etiam nulla sem, pretium ac eleifend eget, tristique non orci. <br>
-    Donec a fermentum risus. Curabitur cursus dolor eu sapien tempor, malesuada auctor magna gravida. <br>
-    Quisque semper non mi ut molestie. Pellentesque ultricies, ex ut porttitor varius, purus nulla aliquam dui, <br>
-    a laoreet augue leo sit amet elit. Quisque suscipit libero urna, et aliquam arcu hendrerit sit amet.<br>
-</section>
+    <div class="two-items">
+        <div>
+            <img src="images/book_review_TM.jpg" alt="book review image 3">
+        </div>
+        <div>
+        <h2 class="center box-model-2 title-box"> THE MAIDENS</h2>
+        <p class="right box-model text-box-2">
+            “This is one of those books riding the coattails of its betters. Recently, there have been a ton of fictional books aiming to <br>
+             incorporate or rework some part of the Ancient world, from Natalie Haynes to Pat Barker to Kamila Shamsie and more. However, this <br>
+             is something else entirely. It certainly has neither the power of Greek myth nor the quality of Secret History. It doesn’t even hit <br>
+             the acceptable levels for a decent modern thriller. In fact, it is PAINFULLY bad. The plodding, simplistic style. The stilted, <br>
+             unnatural conversations. The apparently profound moments. The stereotyping of every character worsened by ridiculous descriptions, <br>
+            ‘despite all this trauma, Henry was a remarkably intelligent person’. What has trauma got to do with intelligence? The whole thing is like this.”<br><br>
+            Emma, 2021 
+        </p>
+    </div>
+    </div>
+    </section>
     </main>
     <footer>
-        <section>
-             <h3 class="hidden">Contact Information</h3>
-             <!--Insert fake social media accounts-->
-             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                Etiam nulla sem, pretium ac eleifend eget, tristique non orci.<br>
-                thebooknook@madeup.ca 
-             </p>
+        <section class="footer">
              <nav aria-label="Footer Navigation">
                 <h3 class="hidden">Footer Navigation</h3>
-                <ul>
+                <div>
+                <ul class=" border-right left image-margin text-box-foot">
                     <li>Home</li>
-                    <li>About</li>
-                    <li>Book Recommendations</li> 
-                    <li>Reviews</li>
+                    <li>Reviews</li> 
+                    <li>Recommendations</li>
                     <li>Contact</li>
                      </ul>
-                    </nav>
+                </div>
+            </nav>
             <p>
                 ©2021 The Book Nook Inc. All Rights Reserved. Privacy Policy
             </p>
