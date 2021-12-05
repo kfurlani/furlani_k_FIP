@@ -30,6 +30,13 @@
     - git add *
     - git push origin 
 
+## Acknowledgements
+
+    Thank you for such a great semester!! Happy Holidays :) 
+
+ <img src="images/contact_hero.jpg" alt="banner image"> 
+
+ 
 ## License 
 
 © 2021 Krystal Furlani
