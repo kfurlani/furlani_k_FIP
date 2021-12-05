@@ -4,51 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Welcome to The Book Nook</title>
 </head>
-<body>
-    <header>
-        <nav aria-label="Main Navigation">
-            <h3 class="hidden">Main Navigation</h3>
-            <ul>
+<body class="site">
+    <h1 class="hidden">Welcome to the Book Nook</h1>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header class="head">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Book Nook logo">
+        </div>
+        <nav class="nav" aria-label="Main Navigation">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="large-text">
                 <li>Home</li>
-                <li>About</li>
-                <li>Book Recommendations</li> 
-                <li>Reviews</li>
+                <li>Reviews</li> 
+                <li>Recommendations</li>
                 <li>Contact</li>
                  </ul>
                 </nav>
     </header>
-    <main id="content">
-        <h2>Contact Us!</h2>
-        <!--insert image-->
-        <img src="https://via.placeholder.com/250" alt="This is a placeholder image, sized at 250x250 pixels"> 
-        <form action="email.php" method="POST" enctype="text/plain">
-            <input name="fullName" type="text" placeholder="First & Last Name">
-            <input name="contactInfo" type="text" required placeholder="">
-            <textarea name="msg" placeholder="Enter your message here..."></textarea>
-            <input name="submit" type="submit" value="Send">
-        </form>
+    <main id="content" class="main">
+        <section class="banner">
+            <div class="banner-img">
+            <img class=".image-margin" src="images/contact_hero-new.jpg" alt="banner image"> 
+            </div>
+        </section>
+        <section class="contact area">
+            <div class="one-item">
+            <h2 class="center box-model-3 trending-title">GET IN TOUCH WITH US</h2>  
+            </div>
+            <div class="two-items">
+                <div>
+                    <form class="margin-top" action="email.php" method="POST" enctype="text/plain">
+                        <input class="contact-input" name="fullName" type="text" placeholder="First & Last Name">
+                        <input class="contact-input" name="contactInfo" type="text"placeholder="Email Address">
+                    </form> 
+                    <form class="margin-top">
+                        <textarea id="contact-message"  name="msg" placeholder="Enter your message here..."></textarea>
+                        <input name="submit" type="submit" value="Send">
+                    </form> 
+                </div>  
+                <div class="text-margin-right">
+                    <p class="box-model text-box-2">
+                        Have any questions, want to  recommend a book, or submit a review? <br> 
+                        Send us a message and we’ll be in ontact with you shortly! <br><br><br>
+                        THANK YOU, <br><br>
+                        THE BOOK NOOK TEAM
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <section>
-             <h3 class="hidden">Contact Information</h3>
-             <!--Insert fake social media accounts-->
-             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                Etiam nulla sem, pretium ac eleifend eget, tristique non orci.<br>
-                thebooknook@madeup.ca 
-             </p>
+        <section class="footer">
              <nav aria-label="Footer Navigation">
                 <h3 class="hidden">Footer Navigation</h3>
-                <ul>
+                <div>
+                <ul class=" border-right left image-margin text-box-foot">
                     <li>Home</li>
-                    <li>About</li>
-                    <li>Book Recommendations</li> 
-                    <li>Reviews</li>
+                    <li>Reviews</li> 
+                    <li>Recommendations</li>
                     <li>Contact</li>
                      </ul>
-                    </nav>
+                </div>
+            </nav>
             <p>
                 ©2021 The Book Nook Inc. All Rights Reserved. Privacy Policy
             </p>
