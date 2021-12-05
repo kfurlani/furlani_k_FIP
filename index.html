@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@300&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Welcome to The Book Nook</title>
 </head>
@@ -17,10 +22,10 @@
         <nav class="nav" aria-label="Main Navigation">
             <h2 class="hidden">Main Navigation</h2>
             <ul class="large-text">
-                <li>Home</li>
-                <li>Reviews</li> 
-                <li>Recommendations</li>
-                <li>Contact</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li> 
+                <li><a href="index.html">Recommendations</a></li>
+                <li><a href="contact.html">Contact</a></li>
                  </ul>
                 </nav>
     </header>
@@ -45,11 +50,13 @@
             </div>
     </section>
     <section class="banner">
+        <h2 class="hidden"> Webpage starts</h2>
         <div class="banner-img">
-        <img class=".image-margin" src="images/bookstack_pumpkin-new-2.jpg" alt="banner image"> 
+        <img class=".image-margin" src="images/bookstack_pumpkin.jpg" alt="banner image"> 
         </div>
     </section>
-    <section class="quote">
+    
+    <section class="quote"> <h3 class="hidden">book of month area</h3>
         <div class="quote-img">
 <img src="images/quote.jpg" alt="svg of quote">
         </div>
@@ -57,7 +64,7 @@
     <section class="book of the month">
         <div class="two-items">
             <div>    
-                <img src="images/book_of_month-2.jpg" alt="book of the month"> 
+                <img src="images/book_of_month.jpg" alt="book of the month"> 
             </div>
             <div>
                 <h2 class="center box-model-2 trending-title">BOOK OF THE MONTH</h2>
@@ -71,9 +78,10 @@
             </div>
         </div>
     </section>
-    <section class="banner">
+
+    <section class="banner"> <h3 class="hidden">trending books area</h3>
         <div class="banner-img">
- <img src="images/book_banner-2.jpg" alt="book banner">  
+ <img src="images/book_banner.jpg" alt="book banner">  
         </div>
     </section>
     <section class="trending books">
@@ -82,35 +90,47 @@
         </div>
         <div class="two-items-2">
             <div>
- <img class="image-margin-top" src="images/trending_books-2.jpg" alt="book stack"> 
+ <img class="image-margin-top" src="images/trending_books.jpg" alt="book stack"> 
             </div>  
  <ol class="large-text">
-     <li> The Seven Husbands of Evelyn Hugo <br> By: Taylor Jenkins Reid</li><br>
-     <li>The Secret History <br> By: Donna Tartt</li><br>
-     <li>Dance of Thieves <br> By: Mary E. Pearson</li><br>
-     <li>The Glass Hotel <br> By: Emily St. John Mandel </li>
+     <li> The Seven Husbands of Evelyn Hugo <br> By: Taylor Jenkins Reid</li>
+     <li class="margin-top">The Secret History <br> By: Donna Tartt</li>
+     <li class="margin-top">Dance of Thieves <br> By: Mary E. Pearson</li>
+     <li class="margin-top">The Glass Hotel <br> By: Emily St. John Mandel </li>
  </ol>
         </div>
     </section>
 
 </main>
-    <footer>
-        <section class="footer">
-             <nav aria-label="Footer Navigation">
-                <h3 class="hidden">Footer Navigation</h3>
-                <div>
-                <ul class=" border-right left image-margin text-box-foot">
-                    <li>Home</li>
-                    <li>Reviews</li> 
-                    <li>Recommendations</li>
-                    <li>Contact</li>
-                     </ul>
-                </div>
-            </nav>
-            <p>
-                ©2021 The Book Nook Inc. All Rights Reserved. Privacy Policy
-            </p>
+<footer>
+    <section class="footer">
+        <h2 class="hidden">Footer begins</h2>
+         <nav aria-label="Footer Navigation">
+            <h3 class="hidden">Footer Navigation</h3>
+            <div>
+            <ul class=" border-right left image-margin text-box-foot">
+                <li>Home</li>
+                <li>Reviews</li>
+                <li>Recommendations</li>
+                <li>Contact</li>
+                 </ul>
+            </div>
+        </nav>
+            <div class=" center one-item margin-left large-margin-top border-right">
+            <div class="foot-large">
+                <h3>
+                    Want to recieve daily updates?
+                    Subscribe to our newsletter!
+                </h3>
+            </div>
+            <div class="image-margin-top">
+                <form class="margin-top" action="email.php" method="POST" enctype="text/plain">
+                    <input class="contact-input" name="fullName" type="text" placeholder="Enter email address">
+                    <input name="submit" type="submit" value="Submit">
+                </form> 
+            </div>
+        </div>
         </section>
-    </footer>
+</footer>
 </body>
 </html>

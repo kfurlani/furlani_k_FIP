@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@300&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Welcome to The Book Nook</title>
 </head>
@@ -16,18 +21,19 @@
         </div>
         <nav class="nav" aria-label="Main Navigation">
             <h2 class="hidden">Main Navigation</h2>
-            <ul class="large-text">
-                <li>Home</li>
-                <li>Reviews</li> 
-                <li>Recommendations</li>
-                <li>Contact</li>
+            <ul class=" active large-text">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li> 
+                <li><a href="index.html">Recommendations</a></li>
+                <li><a href="contact.html">Contact</a></li>
                  </ul>
                 </nav>
     </header>
     <main id="content" class="main">
         <section class="banner">
+            <h3 class="hidden">body of page starts</h3>
             <div class="banner-img">
-            <img class=".image-margin" src="images/contact_hero-new.jpg" alt="banner image"> 
+            <img class=".image-margin" src="images/contact_hero.jpg" alt="banner image"> 
             </div>
         </section>
         <section class="contact area">
@@ -38,7 +44,7 @@
                 <div>
                     <form class="margin-top" action="email.php" method="POST" enctype="text/plain">
                         <input class="contact-input" name="fullName" type="text" placeholder="First & Last Name">
-                        <input class="contact-input" name="contactInfo" type="text"placeholder="Email Address">
+                        <input class="contact-input" name="contactInfo" type="text" placeholder="Email Address">
                     </form> 
                     <form class="margin-top">
                         <textarea id="contact-message"  name="msg" placeholder="Enter your message here..."></textarea>
@@ -58,24 +64,24 @@
     </main>
     <footer>
         <section class="footer">
+            <h2 class="hidden">Footer begins</h2>
              <nav aria-label="Footer Navigation">
                 <h3 class="hidden">Footer Navigation</h3>
                 <div>
                 <ul class=" border-right left image-margin text-box-foot">
-                    <li>Home</li><br><br>
-                    <li>Reviews</li> <br><br>
-                    <li>Recommendations</li><br><br>
-                    <li>Contact</li><br><br>
+                    <li>Home</li>
+                    <li>Reviews</li>
+                    <li>Recommendations</li>
+                    <li>Contact</li>
                      </ul>
                 </div>
             </nav>
-            <section class=" center one-item margin-left large-margin-top border-right">
-                <div>
+                <div class=" center one-item margin-left large-margin-top border-right">
                 <div class="foot-large">
-                    <p>
+                    <h3>
                         Want to recieve daily updates?
                         Subscribe to our newsletter!
-                    </p>
+                    </h3>
                 </div>
                 <div class="image-margin-top">
                     <form class="margin-top" action="email.php" method="POST" enctype="text/plain">
