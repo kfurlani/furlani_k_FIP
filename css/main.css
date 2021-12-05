@@ -150,6 +150,7 @@ body {
    background: #282D6A;
 }
 
+
  .box-model-3{
     margin: 2px;
     padding: 2px;
@@ -176,6 +177,18 @@ body {
       margin-top: 2em;
   }
 
+  .margin-top{
+     margin-top: 1em;
+  }
+
+  .margin-left{
+     margin-left: 3em
+  }
+
+  .text-margin-right{
+     margin-right: 7em;
+  }
+
   .left{
       text-align: left;
   }
@@ -184,6 +197,20 @@ body {
       border-right: 2px solid #fff;
   }
   
+  #contact-message{
+     height: 150px;
+     width: 355px;
+     font-size: 10pt;
+     border-color: #1F3A1F;
+     border-width: 5px;
+  }
+
+  .contact-input{
+     height: 50px;
+     font-size: 10pt;
+     border-color: #1F3A1F;
+     border-width: 5px;
+  }
    /*------------ End General ------------*/
 
 
