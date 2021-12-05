@@ -91,6 +91,11 @@ ___________________________________________ */
     font-size:18px;
     color: #D3CC53;
 }
+.foot-large{
+   font-size: 20px;
+   color: #D3CC53;
+}
+
 .title-box{
    font-size: 25px;
    color: #F4F2E9
@@ -185,16 +190,25 @@ body {
      margin-left: 3em
   }
 
+  .margin-right{
+     margin-right: 1em;
+  }
+
   .text-margin-right{
      margin-right: 7em;
   }
 
+
   .left{
       text-align: left;
+  }
+  .right-icon{
+     text-align: right;
   }
 
   .border-right {
       border-right: 2px solid #fff;
+      height: 135px;
   }
   
   #contact-message{
@@ -210,6 +224,10 @@ body {
      font-size: 10pt;
      border-color: #1F3A1F;
      border-width: 5px;
+  }
+
+  .large-margin-top{
+     margin-top: 2px
   }
    /*------------ End General ------------*/
 
@@ -239,6 +257,24 @@ body {
         grid-template-columns: 1fr;
      }
 
+     .one-item-foot{
+      display: grid;
+      grid-column: 2 / span 1;
+      grid-template-columns: 1fr;
+     }
+
+     .one-item-3{
+        display:grid;
+        grid-column: 3/ span 1;
+        grid-template-columns: 1fr;
+     }
+
+     .one-item-4{
+        display:grid;
+        grid-column: 4/ span 1;
+        grid-template-columns: 1fr;
+     }
+
      .two-items {
         display: grid;
         grid-column: 2 / span 2;
@@ -263,6 +299,9 @@ body {
         column-gap: 2em;
      }
 
+     .social-item {
+      padding: 2em;
+   }
 
 
            /*------------ End Grid Items ------------*/

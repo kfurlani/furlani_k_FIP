@@ -42,7 +42,7 @@
                     </form> 
                     <form class="margin-top">
                         <textarea id="contact-message"  name="msg" placeholder="Enter your message here..."></textarea>
-                        <input name="submit" type="submit" value="Send">
+                        <input name="submit" type="submit" value="Submit">
                     </form> 
                 </div>  
                 <div class="text-margin-right">
@@ -62,17 +62,29 @@
                 <h3 class="hidden">Footer Navigation</h3>
                 <div>
                 <ul class=" border-right left image-margin text-box-foot">
-                    <li>Home</li>
-                    <li>Reviews</li> 
-                    <li>Recommendations</li>
-                    <li>Contact</li>
+                    <li>Home</li><br><br>
+                    <li>Reviews</li> <br><br>
+                    <li>Recommendations</li><br><br>
+                    <li>Contact</li><br><br>
                      </ul>
                 </div>
             </nav>
-            <p>
-                ©2021 The Book Nook Inc. All Rights Reserved. Privacy Policy
-            </p>
-        </section>
+            <section class=" center one-item margin-left large-margin-top border-right">
+                <div>
+                <div class="foot-large">
+                    <p>
+                        Want to recieve daily updates?
+                        Subscribe to our newsletter!
+                    </p>
+                </div>
+                <div class="image-margin-top">
+                    <form class="margin-top" action="email.php" method="POST" enctype="text/plain">
+                        <input class="contact-input" name="fullName" type="text" placeholder="Enter email address">
+                        <input name="submit" type="submit" value="Submit">
+                    </form> 
+                </div>
+            </div>
+            </section>
     </footer>
 </body>
 </html>
