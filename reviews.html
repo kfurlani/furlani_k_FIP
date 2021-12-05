@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@300&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Welcome to The Book Nook</title>
 </head>
@@ -17,15 +22,16 @@
         <nav class="nav" aria-label="Main Navigation">
             <h2 class="hidden">Main Navigation</h2>
             <ul class="large-text">
-                <li>Home</li>
-                <li>Reviews</li> 
-                <li>Recommendations</li>
-                <li>Contact</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li> 
+                <li><a href="index.html">Recommendations</a></li>
+                <li><a href="contact.html">Contact</a></li>
                  </ul>
                 </nav>
     </header>
     <main id="content" class="main">
         <section class="hero">
+            <h2 class="hidden"> Review body </h2>
             <div class="hero-img">
                 <img src="images/review_banner.jpg" alt="open books">
             </div>
@@ -99,25 +105,33 @@
     </main>
     <footer>
         <section class="footer">
+            <h2 class="hidden">Footer begins</h2>
              <nav aria-label="Footer Navigation">
                 <h3 class="hidden">Footer Navigation</h3>
                 <div>
                 <ul class=" border-right left image-margin text-box-foot">
                     <li>Home</li>
-                    <li>Reviews</li> 
+                    <li>Reviews</li>
                     <li>Recommendations</li>
                     <li>Contact</li>
                      </ul>
                 </div>
             </nav>
-            <section>
-                <div>
-            <p class="small-text bottom">
-                ©2021 The Book Nook Inc. All Rights Reserved. Privacy Policy
-            </p>
+                <div class=" center one-item margin-left large-margin-top border-right">
+                <div class="foot-large">
+                    <h3>
+                        Want to recieve daily updates?
+                        Subscribe to our newsletter!
+                    </h3>
                 </div>
-        </section>
-        </section>
+                <div class="image-margin-top">
+                    <form class="margin-top" action="email.php" method="POST" enctype="text/plain">
+                        <input class="contact-input" name="fullName" type="text" placeholder="Enter email address">
+                        <input name="submit" type="submit" value="Submit">
+                    </form> 
+                </div>
+            </div>
+            </section>
     </footer>
 </body>
 </html>
